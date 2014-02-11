@@ -21,7 +21,7 @@ body {
 }
 
 .col6 {
-  width: 15%;
+  width: 20%;
   display: inline-block;
 }
 
@@ -68,7 +68,7 @@ h1 {
   @include border-radius(10px);
 
   background-color: $flatiron-blue;
-  height: 90px;
+  height: 100px;
   border: 2.5px solid transparent;
   position: relative;
 

@@ -1,18 +1,44 @@
 - value: Quote matcher!
-  category: cat1
   question: True friends stab you in the front.
   answer: Wilde
+
 - value: Quote matcher!
-  category: cat2
-  question: Oscar Wilde
-  answer: Wilde
+  question: Sartre
+  answer: Sartre
+
+- value: Quote matcher
+  question: Virginia Woolf
+  answer: Woolf
+
 - value: Quote matcher!
-  category: cat3
   question: The breadth of an aristocrat is the death rattle of freedom.
   answer: Büchner
+
 - value: Quote matcher!
-  category: cat1
+  category: cat4
+  question: From each according to his abilities to each according to his needs
+  answer: Marx 
+
+- value: Quote matcher!
+  question: If you are lonely when you're alone you are in bad company.
+  answer: Sartre
+
+- value: Quote matcher
+  question:  The older one grows the more one likes indecency.
+  answer: Woolf
+
+
+- value: Quote matcher!
+  question: Oscar Wilde
+  answer: Wilde
+
+- value: Quote matcher!
   question: Büchner
-  answer: Büchner
+  answer: Büchner  
+
+- value: Quote matcher!
+  question: Marx
+  answer: Karl Marx
+
 
 

@@ -21,8 +21,6 @@ $(document).ready(function(){
         }
         else if(matches.length===2 && matches[0] !== matches[1]){
           $(this).addClass("disabled");
-          //$cards.filter(".disabled").find(".question").fadeOut()
-          alert(2)
           $cards.filter(".disabled").removeClass("chosen")
           
           // $cards.filter(".disabled").find(".value").fadeIn()
@@ -36,9 +34,7 @@ $(document).ready(function(){
             $cards.filter(".disabled").find(".question").fadeOut()
             $cards.filter(".disabled").find(".value").fadeIn()
             $cards.filter(".disabled").removeClass("disabled")
-            
-
-          }, 1500)
+          }, 2000)
         }
         else  {
           $(this).addClass("disabled");
