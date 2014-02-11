@@ -16,14 +16,17 @@ $(document).ready(function(){
           $cards.filter(".disabled").removeClass("disabled")
           matches.pop()
           matches.pop()
-          alert(matches)
+          alert("you got a match!")
         }
         else if(matches.length===2 && matches[0] !== matches[1]){
           $cards.filter(".disabled").find(".value")
           //.fadeIn().find(".question").fadeOut()
-          alert("hi")
-          $cards.filter(".disabled").removeClass("disabled").removeClass("chosen")
+          $cards.filter(".disabled").removeClass("chosen")
+          matches.pop()
+          matches.pop()
         }
+     
+       
 
        //.find(".question").fadeOut()
 
