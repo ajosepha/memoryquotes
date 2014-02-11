@@ -6,6 +6,10 @@
   question: Sartre
   answer: Sartre
 
+- value: Quote matcher!
+  question: My mistakes are my life.
+  answer: Beckett
+
 - value: Quote matcher
   question: Virginia Woolf
   answer: Woolf
@@ -20,21 +24,40 @@
   answer: Marx 
 
 - value: Quote matcher!
+  question: Susan Sontag
+  answer: Sontag
+
+- value: Quote matcher!
   question: If you are lonely when you're alone you are in bad company.
   answer: Sartre
 
-- value: Quote matcher
+- value: Quote matcher!
   question:  The older one grows the more one likes indecency.
   answer: Woolf
 
+- value: Quote matcher!
+  question: Samuel Beckett
+  answer: Beckett
+
+- value: Quote matcher!
+  question: Toni Morrison 
+  answer: Morrison
 
 - value: Quote matcher!
   question: Oscar Wilde
   answer: Wilde
 
 - value: Quote matcher!
+  question: Lying is the most simple form of self-defence.
+  answer: Sontag
+
+- value: Quote matcher!
   question: Büchner
   answer: Büchner  
+
+- value: Quote matcher
+  question: You wanna fly you got to give up the shit that weighs you down.
+  answer: Morrison
 
 - value: Quote matcher!
   question: Marx

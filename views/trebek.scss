@@ -1,4 +1,4 @@
-$flatiron-blue: #26c4ff;
+$flatiron-blue: #2277AA;
 
 @import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900,400italic,700italic,900italic);
 
@@ -10,7 +10,7 @@ $flatiron-blue: #26c4ff;
 
 body {
   font-family: 'Overlock', 'Helvetica', 'Arial', sans-serif;
-  background: url(/img/shattered-island.gif);
+  background: url(/img/lib.jpg);
 }
 
 /* grid */
@@ -43,7 +43,7 @@ footer {
   text-align: center;
   width: 100%;
   div {
-    background-image: url(/img/trebek-sprite.png);
+    background-image: url(/img/lib.jpg);
     background-position: 0 -205px; width: 260px; height: 199px;
     position: fixed;
     bottom: 0;
