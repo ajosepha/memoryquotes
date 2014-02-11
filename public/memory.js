@@ -22,11 +22,6 @@ $(document).ready(function(){
         else if(matches.length===2 && matches[0] !== matches[1]){
           $(this).addClass("disabled");
           $cards.filter(".disabled").removeClass("chosen")
-          
-          // $cards.filter(".disabled").find(".value").fadeIn()
-          //.setInterval(10000);
-          // $cards.filter(".disabled").find(".question").fadeOut();
-          // $cards.filter(".disabled").removeClass("disabled")
           matches.pop()
           matches.pop()
           alert("you didn't get a match")
@@ -78,26 +73,4 @@ $(document).ready(function(){
         
     }});
 });
-// $(document).ready(function(){
 
-//     var $this = $(this);
-  
-//   //toggle text
-//   $("div.card").on("click", function(event) {
-//       if (!$(this).hasClass("disabled")){
-//         alert("hi")}
-//         // ;
-//         // ;
-//         // $(this).addClass("disabled");
-//         //save card
-//         //if no match, removed disabled
-//         //if yes match, then do something else, ie win case
-//     }
-//   });
-  
-//   //make + and - buttons work
-// });
-
-
-//logic
-//if 
