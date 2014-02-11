@@ -21,32 +21,44 @@ $(document).ready(function(){
         }
         else if(matches.length===2 && matches[0] !== matches[1]){
           $(this).addClass("disabled");
-          $cards.filter(".disabled").find(".value")
-          //.fadeIn().find(".question").fadeOut()
-          $cards.filter(".disabled").removeClass("chosen")
+          //$cards.filter(".disabled").find(".question").fadeOut()
           alert(2)
-          // matches.pop()
-          // matches.pop()
+          $cards.filter(".disabled").removeClass("chosen")
+          
+          // $cards.filter(".disabled").find(".value").fadeIn()
+          //.setInterval(10000);
+          // $cards.filter(".disabled").find(".question").fadeOut();
+          // $cards.filter(".disabled").removeClass("disabled")
+          matches.pop()
+          matches.pop()
+          alert("you didn't get a match")
+          setTimeout(function(){
+            $cards.filter(".disabled").removeClass("disabled").find(".question").fadeOut()
+            .addClass("value");
+
+          }, 1000)
         }
-        else if(matches.length ===1 ){
+        else  {
           $(this).addClass("disabled");
           alert("1")
         }
-        else if(matches.length === 3){
-          $cards.filter(".disabled").find(".value").fadeIn();
-          $cards.filter(".disabled").find(".question").fadeOut();
-          $cards.filter(".disabled").removeClass("disabled")
-          matches.pop()
-          matches.pop()
-          matches.pop()
+        // else if(matches.length === 3){
+        //   $cards.filter(".disabled").find(".value").fadeIn();
+        //   $cards.filter(".disabled").find(".question").fadeOut();
+        //   $cards.filter(".disabled").removeClass("disabled")
+        //   matches.pop()
+        //   matches.pop()
+        //   matches.pop()
           //.find(".question")
           //.fadeOut().addClass("value").fadeIn().removeClass(".question");
-        
-        }
+        // }
+        // else
+        //   alert("other" + matches.length)
         // else {
         //   $(this).find(".question").fadeOut();
         //    $(this).siblings().not(".cat-card").removeClass("disabled");
         // }
+      
          
     
 
