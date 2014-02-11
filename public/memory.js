@@ -33,14 +33,15 @@ $(document).ready(function(){
           matches.pop()
           alert("you didn't get a match")
           setTimeout(function(){
-            $cards.filter(".disabled").removeClass("disabled").find(".question").fadeOut()
-            .addClass("value");
+            $cards.filter(".disabled").find(".question").fadeOut()
+            $cards.filter(".disabled").find(".value").fadeIn()
+            $cards.filter(".disabled").removeClass("disabled")
+            
 
-          }, 1000)
+          }, 1500)
         }
         else  {
           $(this).addClass("disabled");
-          alert("1")
         }
         // else if(matches.length === 3){
         //   $cards.filter(".disabled").find(".value").fadeIn();
