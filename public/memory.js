@@ -10,21 +10,47 @@ $(document).ready(function(){
         $(this).find(".value").fadeOut();
         $(this).find(".question").fadeIn();
         matches.push($(this).find(".answer").text().trim());
-        $(this).addClass("disabled");
+        
         if (matches[0]===matches[1]){
           $cards.filter(".disabled").addClass("played")
-          $cards.filter(".disabled").removeClass("disabled")
+          $(this).addClass("played")
+          //$cards.filter(".disabled").removeClass("disabled").removeClass("question")
           matches.pop()
           matches.pop()
           alert("you got a match!")
         }
         else if(matches.length===2 && matches[0] !== matches[1]){
+          $(this).addClass("disabled");
           $cards.filter(".disabled").find(".value")
           //.fadeIn().find(".question").fadeOut()
           $cards.filter(".disabled").removeClass("chosen")
-          matches.pop()
-          matches.pop()
+          alert(2)
+          // matches.pop()
+          // matches.pop()
         }
+        else if(matches.length ===1 ){
+          $(this).addClass("disabled");
+          alert("1")
+        }
+        else if(matches.length === 3){
+          $cards.filter(".disabled").find(".value").fadeIn();
+          $cards.filter(".disabled").find(".question").fadeOut();
+          $cards.filter(".disabled").removeClass("disabled")
+          matches.pop()
+          matches.pop()
+          matches.pop()
+          //.find(".question")
+          //.fadeOut().addClass("value").fadeIn().removeClass(".question");
+        
+        }
+        // else {
+        //   $(this).find(".question").fadeOut();
+        //    $(this).siblings().not(".cat-card").removeClass("disabled");
+        // }
+         
+    
+
+
      
        
 
