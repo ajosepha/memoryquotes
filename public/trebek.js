@@ -1,20 +1,6 @@
 $(document).ready(function(){
 
-  //var game = true;
 
-  //while(game) {
-
-
-
-  //}
-
-  //create a function that changes the text on the
-  // card when the card is clicked
-  //$("div.card").on("click", function(eventObject){
-  //  $(this).find("h2").text("it worked!");
-  //});
-  
-  points = 0;
   
   //toggle text
   $("div.card").on("click", function(event) {

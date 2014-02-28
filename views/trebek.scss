@@ -71,6 +71,8 @@ h1 {
   height: 100px;
   border: 2.5px solid transparent;
   position: relative;
+  display: inline-block;
+  vertical-align: text-center;
 
   /* events */
   &:hover{
@@ -85,8 +87,8 @@ h1 {
   .value, .question, .answer, .cat {
     width: 100%;
     text-align: center;
+    padding-top: 12px;
     position: absolute;
-    top: 27.5px;
     color: white;
     font-weight: 700;
   }
@@ -113,9 +115,7 @@ h1 {
 
 }
 
-.cat-card {
-  background-color: dodgerblue;
-}
+
 
 /* jeopardy */
 .scoreboard-container {
@@ -128,40 +128,7 @@ h1 {
   padding: 10px;
 }
 
-.scoreboard {
-  width: 80%;
-  margin: auto;
-  .player, .score {
-    display: inline-block;
-  }
-  .user {
-    h2 {
-      margin: 0;
-    }
-    img {
-      background-color: rgba(255,255,255,0.3);
-      border: 1px white solid;
-      padding: 10px;
-    }
-  }
 
-  button {
-    @include border-radius(10px);
-
-    border: none;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    font-weight: 900;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    &.disabled{
-      background-color: gray;
-      color: #666666;
-    }
-  }
-}
 
 .board {
   width: 80%;
