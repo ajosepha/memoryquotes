@@ -17,40 +17,42 @@ class Gambit < Sinatra::Application
   end
 
   get "/" do
-    haml :index
-  end
-
-  get "/games/new/" do
-    haml :game_form
-  end
-
-  post "/games/jeopardy/" do
-    # @game = Game.new(Deck.new("data/#{params[:deck_file]}.yml"))
-    haml :results
-  end
-
-  get "/games/:type/:deck_file" do
-    deck = Deck.new("data/#{params[:deck_file]}.yml")
+    deck = Deck.new("data/js_memory.yml")
     @cards = deck.cards
-    haml :"#{params[:type]}"
+    haml :memory2
   end
 
-  get "/games/students/:type/:deck_file" do
-    deck = Deck.new("data/#{params[:deck_file]}.yml")
-    @cards = deck.cards
-    haml :"#{params[:type]}2"
-  end
+  # get "/games/new/" do
+  #   haml :game_form
+  # end
 
-  get "/decks/:deck_file" do
-    deck = Deck.new("data/#{params[:deck_file]}.yml")
-    @cards = deck.cards
-    haml :deck
-  end
+  # post "/games/jeopardy/" do
+  #   # @game = Game.new(Deck.new("data/#{params[:deck_file]}.yml"))
+  #   haml :results
+  # end
 
-  get "/:deck_file" do
-    @deck = YAML::load(File.open("data/#{params[:deck_file]}.yml"))
-    haml :test
-  end
+  # get "/games/:type/:deck_file" do
+  #   deck = Deck.new("data/#{params[:deck_file]}.yml")
+  #   @cards = deck.cards
+  #   haml :"#{params[:type]}"
+  # end
+
+  # get "/games/students/:type/:deck_file" do
+  #   deck = Deck.new("data/#{params[:deck_file]}.yml")
+  #   @cards = deck.cards
+  #   haml :"#{params[:type]}2"
+  # end
+
+  # get "/decks/:deck_file" do
+  #   deck = Deck.new("data/#{params[:deck_file]}.yml")
+  #   @cards = deck.cards
+  #   haml :deck
+  # end
+
+  # get "/:deck_file" do
+  #   @deck = YAML::load(File.open("data/#{params[:deck_file]}.yml"))
+  #   haml :test
+  # end
 
   helpers do
 

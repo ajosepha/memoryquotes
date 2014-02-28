@@ -24,7 +24,7 @@ $(document).ready(function(){
           $cards.filter(".disabled").removeClass("chosen")
           matches.pop()
           matches.pop()
-          alert("you didn't get a match")
+  
           setTimeout(function(){
             $cards.filter(".disabled").find(".question").fadeOut()
             $cards.filter(".disabled").find(".value").fadeIn()
